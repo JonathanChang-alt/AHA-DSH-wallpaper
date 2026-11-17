@@ -1,0 +1,23 @@
+{
+  "mode": "Built-in image_gen; transparent-background edits for local UI review.",
+  "sources": {
+    "wink": "表情_02.png",
+    "heart": "表情_08.png",
+    "shy": "表情_05.png"
+  },
+  "notes": "AI-derived transparent variants retain the original pose and design direction but are not pixel-identical extractions. Public distribution remains unconfirmed. Each is assigned only to its own welcome variant, never to the wind widget.",
+  "prompts": [
+    {
+      "id": "wink",
+      "prompt": "Use case: background-extraction. Edit target: the provided existing chibi illustration. Prepare a transparent UI sticker of exactly this character in exactly this pose: the left eye open with purple iris and right eye winking, smiling, both black cat-paw gloves raised. Remove only the outside white paper backdrop, preserving all opaque white hair and white clothing enclosed by the dark outlines. Preserve the red/black ornament, pale pink hair shading, linework, facial expression, hands, costume, and framing; do not redesign or add elements. Keep the source's faint creator/platform attribution if it remains visible, and do not invent text. Actual transparent alpha outside the character, no white rectangle, no checkerboard baked in, no drop shadow. The figure may retain its original cropped lower edge. Output one centered sticker with minimal transparent margins."
+    },
+    {
+      "id": "heart",
+      "prompt": "Use case: background-extraction. Edit target: the provided existing chibi illustration. Prepare a transparent UI sticker of exactly this character in exactly this pose: both purple eyes open, gentle smile, both black gloves holding the bright red heart in front of the chest. Remove only the outside white paper backdrop, preserving all opaque white hair and white clothing enclosed by the dark outlines. Preserve the red/black ornament, pale pink hair shading, linework, facial expression, hands, costume, and framing; do not redesign or add elements. Keep the source's faint creator/platform attribution if it remains visible, and do not invent text. Actual transparent alpha outside the character, no white rectangle, no checkerboard baked in, no drop shadow. The figure may retain its original cropped lower edge. Output one centered sticker with minimal transparent margins."
+    },
+    {
+      "id": "shy",
+      "prompt": "Use case: background-extraction. Edit target: the provided existing chibi illustration. Prepare a transparent UI sticker of exactly this character in exactly this pose: both purple eyes open, blushing shy expression, both black gloves touching the cheeks. Remove only the outside white paper backdrop, preserving all opaque white hair and white clothing enclosed by the dark outlines. Preserve the red/black ornament, pale pink hair shading, linework, facial expression, hands, costume, and framing; do not redesign or add elements. Keep the source's faint creator/platform attribution if it remains visible, and do not invent text. Actual transparent alpha outside the character, no white rectangle, no checkerboard baked in, no drop shadow. The figure may retain its original cropped lower edge. Output one centered sticker with minimal transparent margins."
+    }
+  ]
+}

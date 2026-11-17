@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "smile",
+  "origin": "User-provided Jimeng export, 2026-11-17",
+  "sourceFile": "design/assets/avatar-motion-v17/export-6378-original.mp4",
+  "sourceSha256": "f02fea78f46727c9101dfbda8bba0535c700570f91e0b62cdfa4a7d92598493b",
+  "sourcePreservedUnchanged": true,
+  "receivedFileName": "jimeng-2026-11-17-6378-用途：AHA-DSH-wallpaper 右上角200px方形「欢笑」动态头像，....mp4",
+  "sourceDimensions": [
+    960,
+    960
+  ],
+  "sourceDurationSeconds": 4.1,
+  "processing": {
+    "method": "Forward-only square portrait, 96 frames/24fps/4 seconds; final six frames approach first pose, silent H.264 with BT.709 square pixels. No character redraw, matte or composition crop.",
+    "dimensions": [
+      512,
+      512
+    ],
+    "fps": 24,
+    "durationSeconds": 4,
+    "audio": "removed",
+    "metadata": "Original global metadata copied; raw export preserved."
+  },
+  "generation": {
+    "submittedBy": "user",
+    "assistantSubmitted": false,
+    "backendModelObserved": null,
+    "creditsObserved": null,
+    "preparedPrompt": "design/animation-inputs/avatar-selected-jimeng-v2/01-smile-prompt.txt",
+    "submittedPromptObserved": false
+  },
+  "output": "avatar-smile-motion-v1.mp4",
+  "poster": "avatar-smile-motion-v1-poster.webp",
+  "outputSha256": "c673e801b9015667e8fb920d9c91caaed817fc0af37a06791c8c11279aaace10",
+  "outputBytes": 724566,
+  "redistributionStatus": "unconfirmed"
+}

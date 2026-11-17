@@ -1,0 +1,18 @@
+{
+  "version": 1,
+  "id": "scarlet-trick",
+  "titleProposed": "绯红戏法",
+  "status": "integrated-static-preview.7",
+  "width": 1920,
+  "height": 1080,
+  "sha256": "d55cb7e30f9548b35757432ecda77e4933b4d54b23d1389c1a6e2641eda8dda5",
+  "origin": "User-provided image attachment, 2026-11-15",
+  "processing": "Full composition, no mirroring, no generative edits; lossless full-size WebP plus resized thumbnail; CSS-only frame.",
+  "redistributionStatus": "unconfirmed",
+  "discussion": "design/WALLPAPER_V7_DISCUSSION.md",
+  "approvedScope": "Static wallpaper candidate first; review composition before motion",
+  "borderDirection": "Thin red-black border with sparse manga/card corner marks",
+  "title": "绯红戏法",
+  "originalSha256": "d55cb7e30f9548b35757432ecda77e4933b4d54b23d1389c1a6e2641eda8dda5",
+  "approvedChatPlacement": "right on wide windows; reading-first full width at 1200px and below"
+}

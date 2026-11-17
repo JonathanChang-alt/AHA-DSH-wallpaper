@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "id": "teatime",
+  "origin": "User-provided Jimeng export, 2026-11-17",
+  "sourceFile": "design/assets/motion-v16/teatime-original.mp4",
+  "sourceSha256": "f6d3fef9785245754b40b1e4b017ad350152ee9b2f91eab4a0a3b9ae930bab00",
+  "sourcePreservedUnchanged": true,
+  "receivedFileName": "jimeng-2026-11-17-9524-用途：AHA-DSH-wallpaper 内置壁纸「棋盘茶会」图生视频。  以输....mp4",
+  "sourceDimensions": [
+    3184,
+    1792
+  ],
+  "sourceDurationSeconds": 4.06,
+  "processing": {
+    "method": "Forward playback, first 4 seconds normalized to 24fps. Last 0.208333 seconds softly approach the first pose for the loop seam. No reverse playback, matte, composition crop or generative redraw.",
+    "filter": "96 forward RGB frames at 24fps; frames 90..95 blend to frame 0, final frame exactly matches the first pose; BT.709 square-pixel output",
+    "dimensions": [
+      1920,
+      1080
+    ],
+    "fps": 24,
+    "durationSeconds": 4,
+    "audio": "removed",
+    "metadata": "Original global metadata copied; raw export retained unchanged."
+  },
+  "output": "teatime-motion-v1.mp4",
+  "poster": "teatime-motion-v1-poster.webp",
+  "outputBytes": 3647795,
+  "outputSha256": "275a15e354f3ba3f5a65ca75c821ef57bd53f425420e13a8c25d77ac76a9b286",
+  "generation": {
+    "submittedBy": "user",
+    "assistantSubmitted": false,
+    "backendModelObserved": null,
+    "creditsObserved": null,
+    "promptRecord": "design/animation-inputs/wallpapers-completion/02-teatime-prompt.txt",
+    "promptStatus": "Prepared prompt; exact submitted prompt and generation settings were not observed."
+  },
+  "redistributionStatus": "unconfirmed"
+}

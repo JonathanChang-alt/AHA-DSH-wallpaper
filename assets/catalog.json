@@ -1,0 +1,43 @@
+[
+  {
+    "id": "gilded-stage",
+    "title": "鎏金剧场",
+    "description": "红幕、画框、人形阿哈与星神形态",
+    "file": "gilded-stage-scene.webp",
+    "backdropFile": "gilded-stage-clear-backdrop.webp",
+    "originalFile": "gilded-stage.webp",
+    "frame": "stage-gold",
+    "thumbnail": "gilded-stage-scene-thumb.webp",
+    "layout": "stage",
+    "position": "center"
+  },
+  {
+    "id": "portrait",
+    "title": "欢愉登场",
+    "description": "红白礼服立绘，留出清爽的阅读空间",
+    "file": "portrait.webp",
+    "thumbnail": "portrait-thumb.webp",
+    "layout": "portrait",
+    "position": "center"
+  },
+  {
+    "id": "teatime",
+    "title": "棋盘茶会",
+    "description": "茶会与棋盘场景，人物位于右侧",
+    "file": "teatime.webp",
+    "thumbnail": "teatime-thumb.webp",
+    "layout": "scene",
+    "position": "75% center"
+  },
+  {
+    "id": "scarlet-trick",
+    "title": "绯红戏法",
+    "description": "镜像漫画、人物靠右，左侧留出阅读空间",
+    "file": "scarlet-trick.webp",
+    "frame": "manga",
+    "thumbnail": "scarlet-trick-thumb.webp",
+    "layout": "manga",
+    "mirrored": true,
+    "position": "center"
+  }
+]

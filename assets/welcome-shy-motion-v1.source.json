@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "provider": "Jimeng",
+  "generationBy": "user; browser generation handed off at user request",
+  "exportId": "4697",
+  "modelObserved": null,
+  "actualSubmittedPromptObserved": false,
+  "preparedPromptRecord": "design/animation-inputs/welcome-second-batch/02-shy-prompt.txt",
+  "preparedPromptText": "用途：AHA-DSH-wallpaper「害羞探头」欢迎贴纸；沿用现有害羞捧脸 Q 版形象。\n参考图：02-shy-reference.png（从既有透明母版原样复制，不是新角色设计）。\n建议：1:1、约 5 秒、先单条小样；先评审捧心小样，再制作此款。\n\n提示词：\n以输入图片为严格角色参考，保留相同的 Q 版比例、紫色眼睛、白发和淡粉阴影、红黑扑克牌头饰、红白服装、脸颊的害羞红晕，以及捧着双颊的两只黑色手套。保持原来的手绘线条、眼睛和配色。固定镜头、固定画幅，人物中心稳定，头饰、发梢和双手完整留在画面内，四周保留少量安全边距。\n\n从参考图的害羞捧脸姿势开始：先抬眼看向观众，轻轻眨眼，头部向一侧小幅歪一下，再略微缩下去一点；双手始终靠近脸颊，短暂向内捂脸，再放回原位，露出微小的笑意。脸颊红晕轻微加深后恢复，发梢随动作缓慢摆动。结尾回到参考图的捧脸表情、手势、人物大小与位置，停稳。动作柔和但看得清，不重复捧心款的向前送心动作。\n\n背景为均匀纯绿色，目标 #00FF00，无纹理、无渐变、无地面或投影，绿色不能反射或染到白发、白衣和手套内部。保持白发、脸部和服装中的浅色区域不透明。不要画输入框、桌沿、白色横条或舞台，软件会把贴纸摆在输入框上沿，不要在视频中把人物大幅移出画面或从底部完全消失。不要添加风车、红心、扑克牌、文字、UI、额外人物或多余肢体。不要镜头推拉、摇移、旋转或切镜，不改变脸型、服装和头饰；保留参考已有署名，不新增标记。\n\n验收重点：双手贴脸稳定；头饰和手指不变形；脸颊/白发不被抠透；轻微探头但不裁切；起止位置一致；与右下风车使用独立素材。\n取回原始导出视频，不使用手机录屏。原片保留不变，抠像后接入 welcome.shy；探头布局由现有 UI 控制。\n",
+  "creditsChargedObserved": null,
+  "reference": "design/animation-inputs/welcome-second-batch/02-shy-reference.png",
+  "download": {
+    "file": "design/assets/motion-v12/shy-original.mp4",
+    "sha256": "7f88101243669109fff2410c4bf0aaa4afe15ce1727920fef2f82e9b145ae894",
+    "bytes": 7338559,
+    "width": 960,
+    "height": 960,
+    "durationSeconds": 5.09,
+    "hasAudio": true,
+    "unchanged": true,
+    "sourceAIGCMetadata": "retained in original download"
+  },
+  "processing": {
+    "output": "welcome-shy-motion-v1.webm",
+    "poster": "welcome-shy-motion-v1-poster.webp",
+    "width": 512,
+    "height": 512,
+    "fps": 24,
+    "codec": "VP9 with alpha",
+    "audio": "removed",
+    "method": "RGB green-excess alpha matte for the observed varying grey-green backdrop; preserve neutral whites and pink hair",
+    "alphaExpression": "255 * (1 - clip((G - max(R, B) - 3) / 7, 0, 1))",
+    "despill": "green mix=0.8",
+    "script": "scripts/prepare-second-welcome-motion.mjs",
+    "outputSha256": "fcf6c964e34a65498b3c94696d784709b033af15f60ed990e7d1d296542d1f0c",
+    "posterSha256": "0f0d8d3b7901c523362c113b9c59b4a7eccadcacd15902f4c43dc4e3c3851e52",
+    "durationSeconds": 5,
+    "posterFrameSeconds": 0
+  },
+  "redistributionStatus": "unconfirmed; underlying reference artwork remains subject to media review before public release"
+}

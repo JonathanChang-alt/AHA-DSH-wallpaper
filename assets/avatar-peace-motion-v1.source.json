@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "peace",
+  "origin": "User-provided Jimeng export, 2026-11-17",
+  "sourceFile": "design/assets/avatar-motion-v17/export-9095-original.mp4",
+  "sourceSha256": "f4012ebe9ce9f607caf3bf0ef899c9f52496b50c0edbcb18ed283df40f7d2237",
+  "sourcePreservedUnchanged": true,
+  "receivedFileName": "jimeng-2026-11-17-9095-用途：AHA-DSH-wallpaper 右上角200px方形「比耶微笑」动态头....mp4",
+  "sourceDimensions": [
+    960,
+    960
+  ],
+  "sourceDurationSeconds": 4.1,
+  "processing": {
+    "method": "Forward-only square portrait, 96 frames/24fps/4 seconds; final six frames approach first pose, silent H.264 with BT.709 square pixels. No character redraw, matte or composition crop.",
+    "dimensions": [
+      512,
+      512
+    ],
+    "fps": 24,
+    "durationSeconds": 4,
+    "audio": "removed",
+    "metadata": "Original global metadata copied; raw export preserved."
+  },
+  "generation": {
+    "submittedBy": "user",
+    "assistantSubmitted": false,
+    "backendModelObserved": null,
+    "creditsObserved": null,
+    "preparedPrompt": "design/animation-inputs/avatar-selected-jimeng-v2/03-peace-prompt.txt",
+    "submittedPromptObserved": false
+  },
+  "output": "avatar-peace-motion-v1.mp4",
+  "poster": "avatar-peace-motion-v1-poster.webp",
+  "outputSha256": "9d61351aefa7634fa04fba7f5a0cd9370e53e5b5151bf64cb72859f5f89ba9a6",
+  "outputBytes": 793012,
+  "redistributionStatus": "unconfirmed"
+}

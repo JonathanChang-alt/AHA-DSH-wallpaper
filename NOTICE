@@ -1,0 +1,70 @@
+AHA-DSH-wallpaper — unofficial fan theme preview
+
+This is an unofficial fan theme for DeepSeek Harness. It is not endorsed by
+DeepSeek, HoYoverse, or the creators of the referenced game artwork.
+
+The illustrations, decorative wordmark, cropped frame pieces, video, and poster
+are derived from the user's local reference collection. The three welcome
+stickers include AI-derived transparent-background edits; their input and prompt
+records are included in assets/welcome-prompts.json. They are not asserted to be
+pixel-identical extractions or newly cleared independent artwork. The stage
+perimeter and transparent
+gold frame also include AI-derived edits using the built-in image_gen tool;
+assets/stage-edit-prompts.json records the prompts. The central figure is
+overlaid from the retained original illustration at runtime. Original rights
+remain with their respective owners. No open-source license for these media is
+asserted by this preview. See assets/provenance.json for source and processing
+records. Redistribution permission remains unconfirmed; this preview must
+not be represented as a cleared public asset release.
+
+The wink welcome animation was generated in Jimeng using Seedance 2.0 mini from
+the existing chibi reference, then chroma-keyed and encoded as a silent VP9 alpha
+WebM. Its generation and processing record is
+assets/welcome-wink-motion-v1.source.json. The source download is retained
+unchanged in the authoring workspace, including its AIGC metadata. Generating
+motion from reference artwork does not establish new redistribution rights.
+
+Original project code and documentation are provided under the MIT license in
+LICENSE, as selected by the project owner. Media are excluded from that grant.
+Third-party runtime and development dependencies retain their own licenses and
+are not vendored here.
+
+The scarlet-trick manga wallpaper is derived from the user's image attachment on
+2026-11-15. The full source composition is retained without AI edits. Since
+preview.18 its runtime media layer and gallery thumbnail are mirrored; the
+frame and corner marks are rendered separately in CSS. See
+assets/scarlet-trick.source.json. Its original publication and redistribution
+permission remain unverified.
+
+The gilded-stage motion wallpaper was exported by the user from Jimeng. Its raw
+original is retained unchanged in the authoring workspace. The bundled silent
+H.264 derivative uses a forward/return loop without compositing duplicate
+figures. Generation UI, model selection and account charges were not observed.
+See assets/gilded-stage-motion-v1.source.json for provenance and processing.
+
+The replacement wind sticker is extracted from the user's phone recording.
+Phone chrome, unrelated images and disconnected lower-corner platform marks
+are excluded. The original recording and prior theme media remain unchanged in
+the authoring workspace. The source artwork is not claimed as newly authored;
+publication and redistribution permission remain unverified. The derivative
+uses alpha matting with local ink-boundary repair and edge color unmatting,
+without generative character redraw. See assets/wind-aha-v2.source.json.
+
+The clear red theater side scenery added in preview.10 was generated with the
+built-in image_gen tool using the existing theater poster as a palette and
+style reference. It contains empty curtains and hanging decorations, while the
+original character video and protected static illustration remain unchanged.
+The prompt, output hash and processing record are included in
+assets/stage-clear-backdrop.source.json. This reference-derived background is
+subject to the same unconfirmed media redistribution review described above.
+
+The heart and shy welcome animations added in preview.12 were generated and
+exported by the user in Jimeng from the corresponding existing chibi references.
+The original downloads and their AIGC metadata are retained unchanged in the
+authoring workspace. Model selection, the exact submitted prompts and account
+charges for these exports were not observed. Bundled derivatives remove the
+audio and varying grey-green backdrop without generative character redraw;
+neutral white hair is preserved by a green-excess alpha matte. See
+assets/welcome-heart-motion-v1.source.json and
+assets/welcome-shy-motion-v1.source.json. The underlying artwork remains subject
+to the same unconfirmed redistribution conditions.

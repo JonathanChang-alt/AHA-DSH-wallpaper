@@ -1,0 +1,21 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "tool": "built-in image_gen",
+  "reference": "assets/gilded-stage-motion-v1-poster.webp",
+  "generatedOriginal": "design/assets/clear-stage-v10/curtain-original.png",
+  "originalSha256": "211cc90650192b423f2bc7584db869097146c00514a82832dfd428867e37bba3",
+  "output": "gilded-stage-clear-backdrop.webp",
+  "width": 1672,
+  "height": 941,
+  "purpose": "Sharp red theater curtains to fill the side regions behind the unchanged character video.",
+  "invariants": [
+    "Original character video unchanged",
+    "Original protected static illustration unchanged",
+    "Independent gold frame retained",
+    "No figures, faces, cards, books or repeated foreground props in this background",
+    "No blur filter on the stage backdrop"
+  ],
+  "prompt": "Use case: precise-object-edit. Asset type: a sharp opaque landscape theater scenery background for the left and right margins behind an existing square character video in an Aha red-and-gold desktop theme. Edit the supplied reference into an EMPTY RED THEATER BACKDROP, wide landscape composition, about 16:9. Match rich dark crimson/burgundy velvet curtains, painterly anime game finish, restrained warm gold hanging-star details and lighting. Left and right thirds show clear richly textured full-height curtain folds and stage wings in crisp focus; middle third simple subdued crimson scenery covered by the unchanged character video at runtime. Remove all human and giant veiled figures, hair, costume pieces, hands, books, playing cards, staffs, planets, fireworks and light swooshes. No characters, silhouettes, faces, body parts or duplicates. No external frame, text, logos, UI or watermark. Sharp illustration detail across the side regions; no blur, bokeh, fog or depth-of-field softening. Keep warm red values close to the reference.",
+  "redistributionStatus": "unconfirmed; reference-derived decorative art remains subject to project media review"
+}

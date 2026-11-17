@@ -1,0 +1,65 @@
+{
+  "name": "dsh-aha-theme",
+  "version": "0.1.0-preview.19",
+  "private": true,
+  "license": "MIT",
+  "description": "An Aha theater theme preview for DeepSeek Harness, with warm reading surfaces and playful stage details.",
+  "type": "module",
+  "main": "./lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "assets",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE",
+    "VALIDATION.md",
+    "design/INTERFACES.md",
+    "design/STAGE_FRAME_V3.md",
+    "design/DYNAMIC_PLAYBACK_SPEC.md",
+    "scripts/start-trial.ps1",
+    "scripts/stop-trial.ps1",
+    "scripts/open-trial.ps1",
+    "NOTICE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-theme",
+        "@deepseek-ai/dsh-client-ui-layout",
+        "@deepseek-ai/dsh-api-session-controller",
+        "@deepseek-ai/dsh-client-ui-session"
+      ]
+    }
+  },
+  "engines": {
+    "node": ">=22.15.0",
+    "dsh": "0.2.1-rc.2"
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "trial": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/start-trial.ps1",
+    "trial:open": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/open-trial.ps1",
+    "trial:stop": "powershell -NoProfile -ExecutionPolicy Bypass -File scripts/stop-trial.ps1"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JonathanChang-alt/AHA-DSH-wallpaper.git"
+  },
+  "homepage": "https://github.com/JonathanChang-alt/AHA-DSH-wallpaper#readme",
+  "bugs": {
+    "url": "https://github.com/JonathanChang-alt/AHA-DSH-wallpaper/issues"
+  }
+}

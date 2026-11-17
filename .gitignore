@@ -1,0 +1,11 @@
+node_modules/
+lib/
+src/client/assets.generated.mjs
+.trial-home/
+.trial-state/
+*.tgz
+.env
+.env.*
+*.log
+.DS_Store
+Thumbs.db

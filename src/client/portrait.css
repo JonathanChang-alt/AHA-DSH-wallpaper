@@ -1,0 +1,46 @@
+/* User-selected 200px theater portrait. Native layout is measured in scene.mjs. */
+body[data-aha-dsh] .aha-portrait {
+  position: absolute; width: 200px; height: 200px; box-sizing: border-box;
+  display: block; margin: 0; padding: 0; border: 0; border-radius: 6px;
+  background: transparent; pointer-events: auto; cursor: pointer;
+  filter: drop-shadow(0 3px 6px #27050b66); color: #ffe7a0; font: inherit;
+}
+body[data-aha-dsh] .aha-portrait-piece {
+  display: block; position: relative; width: 100%; height: 100%; box-sizing: border-box;
+  border: 4px solid #d1a558; border-radius: 3%; outline: 1px solid #fff0b9;
+  outline-offset: -2px; box-shadow: 0 0 0 1px #6f361e, 0 3px 10px #22070e66;
+  background: #c9a257;
+}
+body[data-aha-dsh] .aha-portrait-window {
+  position: absolute; display: block; inset: 0; overflow: hidden;
+  background: #fff8ec; border: 1px solid #773428;
+}
+body[data-aha-dsh] .aha-portrait-image,
+body[data-aha-dsh] .aha-portrait-video {
+  position: absolute; display: block; max-width: none; width: 100%; height: 100%;
+  inset: 0; object-fit: cover; pointer-events: none;
+}
+body[data-aha-dsh] .aha-portrait-window [hidden] { display: none !important; }
+body[data-aha-dsh] .aha-portrait-grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 10px; margin-bottom: 12px; }
+body[data-aha-dsh] .aha-portrait-choice { display: grid; position: relative; gap: 5px; padding: 6px; border: 1px solid #d4ba90; border-radius: 8px; cursor: pointer; background: #fff8ed; color: #642634; font-size: 12px; }
+body[data-aha-dsh] .aha-portrait-choice[data-aha-selected='true'] { border-color: #a5233b; box-shadow: 0 0 0 1px #a5233b; }
+body[data-aha-dsh] .aha-portrait-thumbnail { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 4px; }
+body[data-aha-dsh] .aha-portrait-choice input { position: absolute; top: 10px; left: 10px; accent-color: #a5233b; }
+body[data-aha-dsh] .aha-portrait-choice:focus-within { outline: 2px solid #a5233b; outline-offset: 3px; }
+body[data-aha-dsh] .aha-portrait-motion-tag { font-size: 10px; color: #805c35; }
+body[data-aha-dsh] .aha-portrait-curtain {
+  position: absolute; inset: -1% -1% auto; height: 14%; pointer-events: none;
+  background: repeating-linear-gradient(90deg, #551326 0%, #a02a3b 12%, #671628 23%);
+  border-bottom: 1px solid #e8bf73;
+  clip-path: polygon(0 0, 100% 0, 100% 78%, 80% 100%, 55% 67%, 50% 55%, 45% 67%, 20% 100%, 0 78%);
+}
+body[data-aha-dsh] .aha-portrait-star {
+  position: absolute; bottom: -8%; left: 43%; color: #ffe7a0;
+  text-shadow: 0 1px #60281d; font-size: 14px; pointer-events: none;
+}
+body[data-aha-dsh][data-aha-motion='on'] .aha-portrait-piece { transition: transform 180ms ease, filter 180ms ease; }
+body[data-aha-dsh][data-aha-motion='on'] .aha-portrait:hover .aha-portrait-piece { transform: translateY(-2px) rotate(-1deg); filter: brightness(1.04); }
+body[data-aha-dsh] .aha-portrait:focus-visible { outline: 2px solid #fff0b9; outline-offset: 5px; }
+@media (prefers-reduced-motion: reduce) {
+  body[data-aha-dsh] .aha-portrait-piece { transition: none !important; transform: none !important; }
+}

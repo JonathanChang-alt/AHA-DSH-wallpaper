@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "provider": "Jimeng",
+  "origin": "User reported generation completed; new theater export located in Downloads alongside the older wink export.",
+  "modelObserved": null,
+  "creditsChargedObserved": null,
+  "generationUIObserved": false,
+  "plannedReference": "design/animation-inputs/gilded-stage-next/01-gilded-stage-master.png",
+  "plannedPromptRecord": "design/animation-inputs/gilded-stage-next/02-prompt.txt",
+  "promptTextRecord": "以输入画面为严格角色与构图参考，制作可循环的二次元游戏剧场动态壁纸。固定镜头、固定站位，完整保留人形阿哈、背后巨大星神、权杖、书本与长飘带。保持脸型、眼睛、体型、头饰、服装花纹和红白配色，保持原图红幕与蓝紫星神的对比度，人物面部清楚。\n\n人形阿哈自然眨眼一次，露出俏皮笑意；空闲的手做一次小幅而清楚的翻掌招呼，手指数量、形态正常。持杖手保留握姿，权杖位置基本稳定。发丝和长飘带持续柔顺扬起、舒展、回落，幅度清楚，动作连贯，身体重心固定，不漂移、不转身、不出框。\n\n红色帷幕轻轻起伏，星灯错峰明灭，烟火只保留少量星点自然亮起和消退。背后星神主体与面部轮廓稳定，发丝和局部光泽缓慢流动。亮度变化集中在小范围装饰，人物面部不泛白，不出现整幅闪光。\n\n完成一个自然动作周期，结尾回到开头的构图与姿态，便于循环。保持原画风格与完整人物，不推拉、不摇移、不旋转镜头、不切镜。不要添加外部金框、标题、字标、软件 UI、卡通贴纸、其他人物或音乐。不要让脸、手、头饰、服装花纹、权杖和书本变形。\n",
+  "download": {
+    "file": "design/assets/motion-v8/gilded-stage-original.mp4",
+    "sha256": "781a2d61f402dae57a26a57dfe8be0237a17fb8ca8fe65b3c670387ab324934d",
+    "width": 960,
+    "height": 960,
+    "durationSeconds": 5.09,
+    "hasAudio": true,
+    "unchanged": true,
+    "AIGCMetadataPreserved": true
+  },
+  "processing": {
+    "output": "assets/gilded-stage-motion-v1.mp4",
+    "poster": "assets/gilded-stage-motion-v1-poster.webp",
+    "codec": "H.264",
+    "width": 960,
+    "height": 960,
+    "fps": 24,
+    "durationSeconds": 9.916666666666666,
+    "audio": "removed",
+    "loopTransition": "Forward/return cycle from 120 source frames; drop the two duplicated return endpoints. 238 frames total, no crossfade or double exposure.",
+    "script": "scripts/prepare-stage-motion.mjs",
+    "sourceMetadata": "copied into derived MP4; raw original retained unchanged",
+    "runtimeFrame": "separate theme layer; not baked into video"
+  },
+  "redistributionStatus": "unconfirmed; reference artwork and generated video require review before public release"
+}

@@ -1,0 +1,57 @@
+/* DSH 0.2.1-rc.2 native reading and tool states. No content rewriting. */
+body[data-aha-dsh] .aha-host-center { container: aha-workspace / inline-size; }
+body[data-aha-dsh] [data-chat-flow],
+body[data-aha-dsh] [data-chat-flow] :is(.v5IAXa_root,.v5IAXa_body,[data-slot='conversation.chat.node']) { min-width: 0; }
+body[data-aha-dsh] [data-chat-flow] :is(p,li,blockquote) { overflow-wrap: anywhere; }
+body[data-aha-dsh] [data-chat-flow] blockquote { border-left: 3px solid #b8955c; background: #f5eadb80; color: #684b42; padding: 8px 14px; border-radius: 0 6px 6px 0; }
+body[data-aha-dsh] [data-chat-flow] a { text-underline-offset: 3px; }
+/* Native wide tables assume an undecorated transcript. Keep their scroll
+   surface inside our reading card. */
+body[data-aha-dsh] [data-chat-flow] .md-table-wide {
+  box-sizing: border-box; width: 100%; max-width: 100%; min-width: 0;
+  margin-left: 0; padding-left: 0; overflow-x: auto; overscroll-behavior-x: contain;
+  border: 1px solid #deccb3; border-radius: 8px; background: #fffaf1;
+  scrollbar-color: #bd9c74 #f5ead9;
+}
+body[data-aha-dsh] [data-chat-flow] table { border-collapse: collapse; }
+body[data-aha-dsh] [data-chat-flow] th { background: #f1e1c9; color: #6b2935; }
+body[data-aha-dsh] [data-chat-flow] :is(th,td) { border-color: #dfceb5; }
+body[data-aha-dsh] [data-chat-flow] tbody tr:nth-child(even) { background: #ead8b91f; }
+body[data-aha-dsh] :is([data-chat-flow],[data-dockkit-pane],[data-dockkit-float]) :is(.md-code-block,[data-read],[data-diff],[data-terminal]) {
+  box-sizing: border-box; min-width: 0; max-width: 100%; border: 1px solid #d9c4a8;
+  border-radius: 9px; background: #f8f1e6; box-shadow: 0 2px 8px #4f1b2406;
+}
+body[data-aha-dsh] :is([data-chat-flow],[data-dockkit-pane],[data-dockkit-float]) [data-code-block-banner] {
+  background: #f0e3ce; color: #6c493e; border-bottom: 1px solid #ddc5a3;
+}
+/* Put the frame around the component, not each highlighted <pre>. Preserve
+   Shiki token colors, line numbers, text selection, and native wrap behavior. */
+body[data-aha-dsh] :is([data-chat-flow],[data-dockkit-pane],[data-dockkit-float]) .md-code-block pre {
+  border: 0; border-radius: 0; margin: 0;
+  font-size: var(--dsh-content-font-size-secondary,13px); line-height: 1.65;
+}
+body[data-aha-dsh] :is([data-chat-flow],[data-dockkit-pane],[data-dockkit-float]) :is([data-read],[data-diff],[data-terminal]) {
+  font-size: var(--dsh-content-font-size-secondary,13px); line-height: 1.65;
+}
+body[data-aha-dsh] [data-chat-flow] [data-disclosure-row][data-expandable] { border-radius: 5px; }
+body[data-aha-dsh] [data-chat-flow] [data-disclosure-row][data-expandable]:hover { background: #b7864510; }
+body[data-aha-dsh] [data-chat-flow] [data-disclosure-row][data-expandable]:focus-visible { outline: 2px solid #a47a32; outline-offset: 2px; }
+body[data-aha-dsh] [data-chat-flow] [data-state='error'] [data-disclosure-row] { color: #a4263b; background: #fbeceb; }
+body[data-aha-dsh] [data-chat-flow] [data-error] { color: #a4263b; }
+body[data-aha-dsh] [data-chat-flow] pre[data-error] { white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; border: 1px solid #dcb2ae; background: #fff3f0; }
+body[data-aha-dsh] [data-chat-flow] .cJsG2q_turnErrorRow { padding: 10px 12px; border: 1px solid #dcb2ae; border-left: 3px solid #b5293b; border-radius: 7px; background: #fff3f0; }
+body[data-aha-dsh] [data-chat-flow] .cJsG2q_retryRow { padding: 5px 9px; border-left: 2px solid #b8955c; background: #f6eddc; }
+body[data-aha-dsh] [data-chat-flow] .cJsG2q_fileCard { background: #fff8ea; border-color: #d9bc90; }
+body[data-aha-dsh] :is([data-chat-flow],[data-composer-card],[role='dialog']) :is(button,[role='button'],input):focus-visible {
+  outline: 2px solid #a47a32; outline-offset: 2px;
+}
+body[data-aha-dsh] :is([data-chat-flow],[data-composer-card],[role='dialog']) button:disabled { cursor: not-allowed; }
+/* Retain native warning semantics, acknowledgement gate and modal focus trap. */
+body[data-aha-dsh] [role='dialog']._dialog_o6lrb_33 { border: 1px solid #c6a36c; background: #fffaf1; box-shadow: 0 16px 60px #2b0c2338; }
+body[data-aha-dsh] [role='dialog'] ._title_o6lrb_79 { color: #842138; }
+body[data-aha-dsh] [role='dialog'] ._footer_o6lrb_123 { border-top: 1px solid #e1cfb2; background: #f5ebdb; }
+/* A pushed file pane shrinks the workspace even on a wide screen. Respond to
+   that actual width instead of reserving wallpaper space by viewport alone. */
+@container aha-workspace (max-width: 900px) {
+  body[data-aha-dsh] [data-conversation-content] { padding: 14px 20px; }
+}

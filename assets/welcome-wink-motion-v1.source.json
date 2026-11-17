@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "provider": "Jimeng",
+  "modelObserved": "Seedance 2.0 mini",
+  "modeObserved": "全能参考",
+  "durationSecondsRequested": 5,
+  "aspectRatioRequested": "1:1",
+  "resolutionObserved": "720P",
+  "countRequested": 1,
+  "creditsChargedObserved": 30,
+  "reference": "design/animation-inputs/first-batch/01-wink-sticker-master.png",
+  "promptRecord": "design/animation-inputs/first-batch/01-wink-prompt.txt",
+  "promptSectionUsed": "提示词： through the paragraph before 取回文件：; newlines replaced by spaces",
+  "download": {
+    "file": "design/assets/motion-v6/wink-original.mp4",
+    "sha256": "10332462a07dc8d9993477f2f7d8d0938b0260e11bc9ba4f65e4cd8c25d48237",
+    "width": 960,
+    "height": 960,
+    "durationSeconds": 5.09,
+    "hasAudio": true,
+    "unchanged": true
+  },
+  "processing": {
+    "output": "assets/welcome-wink-motion-v1.webm",
+    "poster": "assets/welcome-wink-motion-v1-poster.webp",
+    "width": 512,
+    "height": 512,
+    "fps": 24,
+    "codec": "VP9 with alpha",
+    "audio": "removed",
+    "keyColor": "0x7f9e6c",
+    "filter": "format=rgba,colorkey=0x7f9e6c:0.10:0.07,despill=type=green:mix=0.2,scale=512:512:force_original_aspect_ratio=decrease,fps=24,format=yuva420p",
+    "script": "scripts/prepare-welcome-motion.mjs",
+    "sourceAIGCMetadata": "retained in original download and transcoded video"
+  },
+  "redistributionStatus": "unconfirmed; underlying character artwork requires separate review before public release",
+  "promptTextRecord": "用途：阿哈主题的新会话欢迎贴纸，沿用现有 Q 版画风。\n输入图片：01-wink-sticker-master.png\n目标时长：约 4–6 秒；以账户实际可选时长为准。\n\n提示词：\n以输入图片为严格角色参考，保持原图的 Q 版比例、脸型、紫色眼睛、白发与粉色阴影、红黑头饰、猫耳、红白服装和两只黑色猫爪手套，保留原来的线条与配色。固定镜头，固定画幅，人物位置稳定，所有头饰和手套都保持在画面内。\n\n从参考图的单眼 wink 表情开始：短暂自然睁眼，看向观众，再俏皮地 wink 回去；两只猫爪手套轻轻上下摆动一次，嘴角露出小小的笑意，头部小幅歪一下，发梢随动作轻摆。角色旁两三颗很小的手绘星点短暂浮现，随后消失。动作要看得清，节奏轻快可爱，保持二次元手绘贴纸质感。结尾回到输入图的表情、手势与位置，便于循环。\n\n背景为均匀纯绿色，接近 #00FF00，无纹理、无渐变、无地面、无阴影，绿色不反射到头发和衣服上，供后续抠像。保持白发和服装内部的白色不透明。保留原有署名或标识，不新增文字、人物或额外肢体。不要镜头推拉、摇移、旋转、切镜；不要改变脸、服装或手套形状。\n\n取回文件：原始导出视频，不用手机录屏。先生成一条小样，交给主题端检查人物一致性、边缘与循环，再扩展另外两款。\n"
+}

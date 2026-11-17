@@ -1,0 +1,79 @@
+{
+  "version": 1,
+  "source": "Three user-selected attachments, duplicate fourth omitted.",
+  "sources": [
+    {
+      "id": "smile",
+      "source": {
+        "attachment": 1,
+        "name": "codex-clipboard-88196b3a-2134-44ff-b06e-bafa2d50abc4.jpg",
+        "preservedFile": "design/assets/avatar-user-selection-v2/original-01.jpg",
+        "sha256": "b2e6cd4ae4fb3f4f5c7bebba79484ca19d03bb28400ecdf613f5685cd07862c9",
+        "dimensions": [
+          1173,
+          1079
+        ]
+      },
+      "crop": [
+        47,
+        0,
+        1079,
+        1079
+      ],
+      "reference": "01-smile-reference.png",
+      "referenceSha256": "10804678837c0779a5cc711f0a2cb2d0ee31c08d9d732084f9ef343a34a5b3a5",
+      "output": "avatar-smile.webp",
+      "outputSha256": "b18a4c385f3d1eb5b3a25ad56dc465ec1b6d0d857934a1aef9cc5257e4215c40",
+      "processing": "Original selected square reference resized to512px and WebP encoded, no generative edits."
+    },
+    {
+      "id": "cheek-wink",
+      "source": {
+        "attachment": 2,
+        "name": "codex-clipboard-037764f5-3cd4-49bb-ad23-1d37d48dc12c.jpg",
+        "preservedFile": "design/assets/avatar-user-selection-v2/original-02.jpg",
+        "sha256": "dbaf69d9af952826ee4f0bee891854485cc3c27703edb3146c55fc05a07f2ea5",
+        "dimensions": [
+          1108,
+          1100
+        ]
+      },
+      "crop": [
+        4,
+        0,
+        1100,
+        1100
+      ],
+      "reference": "02-cheek-wink-reference.png",
+      "referenceSha256": "8d9e7d32922a441983870db8d0581cb2c00eedb9d8271c9a9d2c26e1b3ce335f",
+      "output": "avatar-cheek-wink.webp",
+      "outputSha256": "5b872a745cc25773046d729f1e1dacdfbadaf74a29462593cbf8a06cd38a4b27",
+      "processing": "Original selected square reference resized to512px and WebP encoded, no generative edits."
+    },
+    {
+      "id": "peace",
+      "source": {
+        "attachment": 3,
+        "name": "codex-clipboard-021e4eb5-b9c2-4698-a74c-9e437ead869c.png",
+        "preservedFile": "design/assets/avatar-user-selection-v2/original-03.png",
+        "sha256": "295c8b11b4d50359b307728aa929643ad5314e4fc11048bfb78d1440d21c0ff1",
+        "dimensions": [
+          1320,
+          741
+        ]
+      },
+      "crop": [
+        460,
+        170,
+        432,
+        432
+      ],
+      "reference": "03-peace-reference.png",
+      "referenceSha256": "e32dca2c53e5a0beae93d19c766be4fc6cc92dbd825ea1a19148beb5097fb108",
+      "output": "avatar-peace.webp",
+      "outputSha256": "ede8468de0d308162332f3ee0e9b20d06940f87b46247c3417ebb2a11e21123e",
+      "processing": "Original selected square reference resized to512px and WebP encoded, no generative edits."
+    }
+  ],
+  "redistributionStatus": "unconfirmed"
+}

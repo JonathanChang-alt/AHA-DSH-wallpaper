@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "id": "scarlet-trick",
+  "origin": "User-provided Jimeng export, 2026-11-17",
+  "sourceFile": "design/assets/motion-v16/scarlet-trick-original.mp4",
+  "sourceSha256": "7edb33579e8bbf3c718a42d500facbbdffd142bffd7f5b3213c82b02ba46cab1",
+  "sourcePreservedUnchanged": true,
+  "receivedFileName": "jimeng-2026-11-17-4358-用途：AHA-DSH-wallpaper 内置壁纸「绯红戏法」图生视频。  以输....mp4",
+  "sourceDimensions": [
+    1280,
+    720
+  ],
+  "sourceDurationSeconds": 4.06,
+  "processing": {
+    "method": "Forward playback, first 4 seconds normalized to 24fps. Last 0.208333 seconds softly approach the first pose for the loop seam. No reverse playback, matte, composition crop or generative redraw.",
+    "filter": "96 forward RGB frames at 24fps; frames 90..95 blend to frame 0, final frame exactly matches the first pose; BT.709 square-pixel output",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 24,
+    "durationSeconds": 4,
+    "audio": "removed",
+    "metadata": "Original global metadata copied; raw export retained unchanged."
+  },
+  "output": "scarlet-trick-motion-v1.mp4",
+  "poster": "scarlet-trick-motion-v1-poster.webp",
+  "outputBytes": 2918440,
+  "outputSha256": "45da2c14dc96b3bee39b3c741ea8132e8ce503c53f2272eadc2edb9e52a1485f",
+  "generation": {
+    "submittedBy": "user",
+    "assistantSubmitted": false,
+    "backendModelObserved": null,
+    "creditsObserved": null,
+    "promptRecord": "design/animation-inputs/wallpapers-completion/03-scarlet-trick-prompt.txt",
+    "promptStatus": "Prepared prompt; exact submitted prompt and generation settings were not observed."
+  },
+  "redistributionStatus": "unconfirmed"
+}

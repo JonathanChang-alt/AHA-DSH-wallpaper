@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "id": "cheek-wink",
+  "origin": "User-provided Jimeng export, 2026-11-17",
+  "sourceFile": "design/assets/avatar-motion-v17/export-5294-original.mp4",
+  "sourceSha256": "1ce1eb7d8877cbd7dc36035c5e93145ff611823b4578be0b2e309596c9c8ada6",
+  "sourcePreservedUnchanged": true,
+  "receivedFileName": "jimeng-2026-11-17-5294-用途：AHA-DSH-wallpaper 右上角200px方形「贴脸眨眼」动态头....mp4",
+  "sourceDimensions": [
+    960,
+    960
+  ],
+  "sourceDurationSeconds": 4.1,
+  "processing": {
+    "method": "Forward-only square portrait, 96 frames/24fps/4 seconds; final six frames approach first pose, silent H.264 with BT.709 square pixels. No character redraw, matte or composition crop.",
+    "dimensions": [
+      512,
+      512
+    ],
+    "fps": 24,
+    "durationSeconds": 4,
+    "audio": "removed",
+    "metadata": "Original global metadata copied; raw export preserved."
+  },
+  "generation": {
+    "submittedBy": "user",
+    "assistantSubmitted": false,
+    "backendModelObserved": null,
+    "creditsObserved": null,
+    "preparedPrompt": "design/animation-inputs/avatar-selected-jimeng-v2/02-cheek-wink-prompt.txt",
+    "submittedPromptObserved": false
+  },
+  "output": "avatar-cheek-wink-motion-v1.mp4",
+  "poster": "avatar-cheek-wink-motion-v1-poster.webp",
+  "outputSha256": "cb92a26c21f1b61420f268715c1667e446235c0cbe59381e969f125ff95eac5a",
+  "outputBytes": 432352,
+  "redistributionStatus": "unconfirmed"
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "theater",
+  "title": "剧场肖像",
+  "source": "user-attachment-015416e6-c86f-48da-a877-7f6fefede538.png",
+  "date": "2026-11-17",
+  "sourceCopiedUnchanged": true,
+  "output": "avatar-theater.png",
+  "sha256": "585bc6b760e1c8bd1fd0a81cfe146fe550022c5c0903d110f94ce45ea0bea9fb",
+  "processing": "User-selected static square PNG copied unchanged; no new image generation or animation.",
+  "motion": null,
+  "redistributionStatus": "unconfirmed"
+}

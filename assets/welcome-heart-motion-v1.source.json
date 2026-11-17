@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "date": "2026-11-16",
+  "provider": "Jimeng",
+  "generationBy": "user; browser generation handed off at user request",
+  "exportId": "6255",
+  "modelObserved": null,
+  "actualSubmittedPromptObserved": false,
+  "preparedPromptRecord": "design/animation-inputs/welcome-second-batch/01-heart-prompt.txt",
+  "preparedPromptText": "用途：AHA-DSH-wallpaper「捧心好戏」欢迎贴纸；沿用现有捧心 Q 版形象。\n参考图：01-heart-reference.png（从既有透明母版原样复制，不是新角色设计）。\n建议：1:1、约 5 秒、先单条小样；时长和模型以创作页实际可选项为准。\n\n提示词：\n以输入图片为严格角色参考，保留相同的 Q 版比例、紫色心形高光眼睛、白发和淡粉阴影、红黑扑克牌头饰、红白服装、两只黑色手套，以及双手捧着的同一颗红心。保留手绘线条和配色，固定镜头、固定画幅、人物中心稳定。构图略留安全边距，让头饰、发梢、双手和红心始终完整留在画面内。\n\n从参考图的捧心姿势开始：先停留约半秒，自然眨眼一次，微微歪头，把手中的红心向观众轻轻送出一点，再收回胸前。红心只做一次柔和的明暗变化，保持原来的形状，不变成真实器官。发梢和衣领随动作轻摆。红心上方出现两颗很小的手绘心形星点，慢慢上浮后消失。结尾回到开始的捧心表情、手势、人物位置与大小，停稳，便于主题播放后休息 6 秒再重播。\n\n背景使用均匀纯绿色，目标 #00FF00，无纹理、无渐变、无地面和投影，绿色不能反射或染到白发、白衣、手套和红心内部。保持白发、脸部和服装中的浅色区域不透明。只表现同一个角色，不新增另一颗大红心、不增加扑克牌或风车；界面的扑克边饰由软件单独绘制。不要镜头推拉、摇移、旋转、切镜，不改变角色长相或头饰，不增加手指、手臂、文字或 UI。保留参考中已有署名，不新增标记。\n\n验收重点：双手和红心一致；无多余手指；纯色背景可抠像；白发内部不穿透；起止位置一致；星点在结束前消失；小尺寸下也能看清表情。\n取回原始导出视频，不使用手机录屏。原片保留不变，抠像后接入 welcome.heart，不替换风车或其他欢迎形象。\n",
+  "creditsChargedObserved": null,
+  "reference": "design/animation-inputs/welcome-second-batch/01-heart-reference.png",
+  "download": {
+    "file": "design/assets/motion-v12/heart-original.mp4",
+    "sha256": "0d9975426b11b61616e490c8a9c1efab4e1717d11d390675a0a7a4cccb1f173e",
+    "bytes": 7658804,
+    "width": 960,
+    "height": 960,
+    "durationSeconds": 5.09,
+    "hasAudio": true,
+    "unchanged": true,
+    "sourceAIGCMetadata": "retained in original download"
+  },
+  "processing": {
+    "output": "welcome-heart-motion-v1.webm",
+    "poster": "welcome-heart-motion-v1-poster.webp",
+    "width": 512,
+    "height": 512,
+    "fps": 24,
+    "codec": "VP9 with alpha",
+    "audio": "removed",
+    "method": "RGB green-excess alpha matte for the observed varying grey-green backdrop; preserve neutral whites and pink hair",
+    "alphaExpression": "255 * (1 - clip((G - max(R, B) - 3) / 7, 0, 1))",
+    "despill": "green mix=0.8",
+    "script": "scripts/prepare-second-welcome-motion.mjs",
+    "outputSha256": "4340de58039fed11a906bd05b3af45ecfe7d872bb99029ad333d7726d1bef631",
+    "posterSha256": "a8f82f74675a3961ed7c002ab34c2d6e013182ab6ac960cd27a4c0e97a5bd4a0",
+    "durationSeconds": 5,
+    "posterFrameSeconds": 0
+  },
+  "redistributionStatus": "unconfirmed; underlying reference artwork remains subject to media review before public release"
+}

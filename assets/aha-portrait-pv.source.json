@@ -1,0 +1,11 @@
+{
+  "sourceName": "official_aha_character_pv_cover_3840x1632.png",
+  "sourceSha256": "67BD3873C3A0801100E2D068ACB85A398C29C674E07740E84A5909CE298DEB48",
+  "outputFile": "aha-portrait-pv.webp",
+  "outputSha256": "677BEEF34ED65AF7FAC978C194D897F7CE1D25C1AC1D2C955A1C321079921890",
+  "processing": "Full original resized to 1536px width and WebP encoded at quality 88; face framing is CSS only, without generative edits.",
+  "originalRetained": true,
+  "referenceRecord": "research/deepseek-official-art-research.md",
+  "referencePage": "https://www.miyoushe.com/sr/article/79427010",
+  "redistributionStatus": "unconfirmed"
+}

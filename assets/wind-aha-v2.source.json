@@ -1,0 +1,54 @@
+{
+  "version": 1,
+  "id": "wind-aha-v2",
+  "origin": "User-provided phone recording, 2026-11-16",
+  "sourceFile": "design/assets/wind-v9/received-original.mp4",
+  "sourceSha256": "32cc7660a552c888dc5bbac925c67e36e3b30ef94fd1852f75541e2ff527497b",
+  "sourcePreservedUnchanged": true,
+  "sourceWidth": 592,
+  "sourceHeight": 1280,
+  "sourceDurationSeconds": 11.57,
+  "processing": {
+    "sourceSegmentSeconds": [
+      0.15,
+      2.95
+    ],
+    "cropBeforeMatting": [
+      0,
+      356,
+      592,
+      548
+    ],
+    "fixedCharacterCrop": [
+      48,
+      39,
+      560,
+      532
+    ],
+    "framesProcessed": 67,
+    "loopStartFrame": 35,
+    "loopEndExclusiveFrame": 60,
+    "durationSeconds": 1.0416666666666667,
+    "loopPoseMeanDifference": 0.08831039071083069,
+    "width": 512,
+    "height": 512,
+    "fps": 24,
+    "matting": "Border-connected white removed after 3px outline closing; enclosed white preserved; face-seeded foreground retained. Open white hair tips closed by tracking their existing inner/outer ink lines. Antialiased and unmatted against white.",
+    "watermarks": "Disconnected lower-corner platform badges removed with background; no watermark overlaps the retained character.",
+    "outputBytes": 430445
+  },
+  "output": "wind-aha-v2.webm",
+  "poster": "wind-aha-v2-poster.webp",
+  "audio": "removed",
+  "visibleBounds": {"width":512,"height":512,"left":132,"top":16,"right":504,"bottom":486,"alphaThreshold":16,"analyzedFrames":25,"bottomRange":[471,486],"method":"Union of decoded packaged VP9 alpha frames; used as a fixed layout anchor, not to crop or re-encode the video."},
+  "pixelContent": "Original character detail retained; boundary RGB unmatted against white; no generative redraw.",
+  "redistributionStatus": "unconfirmed; original publication and distribution permission not verified",
+  "verification": {
+    "EdgeDecodedAlpha": true,
+    "opaqueWhiteHairPixelsInMovingRegion": 5957,
+    "badgeAreaAlpha": 0,
+    "taskPlaybackAndPause": true,
+    "actualReadOnlyModelTask": true,
+    "completionStampClearsSticker": true
+  }
+}

@@ -1,0 +1,4 @@
+# The host resolves this package's browser half through dsh.client.
+- insert:
+    - id: ui-skin-aha
+      name: dsh-aha-theme

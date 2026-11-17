@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "wallpapers": {
+    "gilded-stage": {
+      "file": "gilded-stage-motion-v1.mp4",
+      "posterFile": "gilded-stage-motion-v1-poster.webp"
+    },
+    "teatime": {
+      "file": "teatime-motion-v1.mp4",
+      "posterFile": "teatime-motion-v1-poster.webp"
+    },
+    "scarlet-trick": {
+      "file": "scarlet-trick-motion-v1.mp4",
+      "posterFile": "scarlet-trick-motion-v1-poster.webp"
+    }
+  },
+  "portraits": {
+    "smile": {"file":"avatar-smile-motion-v1.mp4","posterFile":"avatar-smile-motion-v1-poster.webp"},
+    "cheek-wink": {"file":"avatar-cheek-wink-motion-v1.mp4","posterFile":"avatar-cheek-wink-motion-v1-poster.webp"},
+    "peace": {"file":"avatar-peace-motion-v1.mp4","posterFile":"avatar-peace-motion-v1-poster.webp"}
+  },
+  "welcome": {
+    "wink": {
+      "file": "welcome-wink-motion-v1.webm",
+      "posterFile": "welcome-wink-motion-v1-poster.webp"
+    },
+    "heart": {
+      "file": "welcome-heart-motion-v1.webm",
+      "posterFile": "welcome-heart-motion-v1-poster.webp"
+    },
+    "shy": {
+      "file": "welcome-shy-motion-v1.webm",
+      "posterFile": "welcome-shy-motion-v1-poster.webp"
+    }
+  }
+}

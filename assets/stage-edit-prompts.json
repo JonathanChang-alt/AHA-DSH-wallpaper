@@ -1,0 +1,17 @@
+{
+  "mode": "Built-in image_gen",
+  "version": 1,
+  "notes": "The generated perimeter/backdrop is combined with a protected central original-image layer. The frame is a separate nine-slice layer; the original image file is retained.",
+  "prompts": [
+    {
+      "id": "stage-clean",
+      "prompt": "Use case: precise-object-edit. Edit the supplied existing anime theater wallpaper; do not redesign it. Remove ONLY the baked-in gold picture-frame rails and corner ornament from the top, right and bottom perimeter, filling those narrow former frame areas with continuous deep red theater curtain/background that matches adjacent pixels. The left edge should also continue naturally as red stage scenery. The entire wallpaper must become an edge-to-edge borderless scene: no gold rectangular frame, no inset photo border, no white or beige padding. Preserve exactly the original humanoid character and the large blue-purple star-god behind her, their faces, expressions, hands, all hair, red-white clothes, staff, book, ribbons, fireworks, colors, contrast, lighting, and original composition and canvas aspect ratio. These protected subjects must stay visually unchanged, sharply detailed, fully visible, and in the same positions. Do not zoom, crop or stretch the figures. No new text, logos, characters or ornaments. This borderless scene will be placed beneath a separate responsive gold UI frame.",
+      "transparent": false
+    },
+    {
+      "id": "stage-frame",
+      "prompt": "Create one standalone transparent ornamental gold theater picture-frame asset, using the attached gold corner crop as the exact art-style reference and the attached full wallpaper only for context. Square front-facing canvas, straight vertical left/right rails and straight horizontal top/bottom rails, four connected closed corners, perfectly rectilinear with no perspective tilt. Both left and right must be equally complete. Match the reference's illustrated champagne-gold bevels, warm ochre shading, delicate curled filigree, tiny four-point star motifs, small diamond details, and a very narrow deep-crimson velvet strip on the outer lip. Rich but refined, anime game UI ornament, not a photorealistic antique frame. Large filigree corners occupy about 16 percent of canvas width; the straight rails are only about 4 percent thick and mostly plain for nine-slice stretching. Frame runs right along the canvas perimeter with no exterior margins. Leave the entire inner opening genuinely transparent (actual alpha), with no background or scene inside. Outside corners are transparent only where the contour requires it. No characters, no faces, no letters, no logos, no extra inset frame, no drop shadow outside the canvas. This is a reusable nine-slice UI border; strong continuous rails with corner detail, matching left and right gold trim.",
+      "transparent": true
+    }
+  ]
+}

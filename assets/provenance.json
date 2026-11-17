@@ -1,0 +1,524 @@
+{
+  "version": 1,
+  "usage": "Unofficial fan theme preview. MIT applies to original code only; this manifest does not clear media redistribution.",
+  "redistributionStatus": "unconfirmed",
+  "sources": [
+    {
+      "id": "restored-static-theater",
+      "sourceName": "User-provided original theater avatar attachment, 2026-11-17",
+      "origin": "Restored by explicit user request; static PNG copied unchanged, no new generation.",
+      "sourceRecord": "avatar-theater.source.json",
+      "processing": "Original 512px square attachment embedded unchanged. Independent red-gold frame remains in CSS."
+    },
+    {
+      "id": "user-selected-portraits-v2",
+      "sourceName": "User-selected avatar attachments 1,2,3",
+      "origin": "User-provided images, crop decisions recorded in avatar-portraits.source.json; duplicate fourth omitted.",
+      "sourceRecord": "avatar-portraits.source.json",
+      "processing": "Three original square references resized and WebP encoded; no generative edits or legacy Q artwork in these three assets. The restored original theater portrait has a separate source record."
+    },
+    {
+      "id": "theater-portrait",
+      "sourceName": "official_aha_character_pv_cover_3840x1632.png",
+      "origin": "Local reference collection, official PV cover as recorded in research/deepseek-official-art-research.md; redistribution permission not verified.",
+      "sourceRecord": "aha-portrait-pv.source.json",
+      "processing": "Full image resized to 1536px wide and WebP encoded. Non-destructive CSS clipping selects the face; the theater frame and curtain are separate DOM/CSS. No generative edits or reuse of welcome/wind artwork."
+    },
+    {
+      "id": "reference-card",
+      "sourceName": "01-A_官方立绘_透明卡_3180x2000.png",
+      "origin": "User-provided reference collection; artwork source recorded by the earlier research task.",
+      "referencePage": "https://www.taptap.cn/moment/848872290421574141",
+      "referenceStatus": "Recorded in research/deepseek-official-art-research.md; this manifest does not certify redistribution permission.",
+      "processing": "Cropped selected regions and encoded WebP. Card is not a transparent character cutout; wordmark retains original red background.",
+      "crops": {
+        "gilded-stage.webp": [
+          1050,
+          220,
+          3080,
+          1790
+        ],
+        "wordmark.webp": [
+          415,
+          680,
+          1050,
+          1120
+        ],
+        "gilt-corner.webp": [
+          125,
+          355,
+          465,
+          650
+        ]
+      }
+    },
+    {
+      "id": "portrait",
+      "sourceName": "01-B_官方立绘_白底全图_1546x1237.jpg",
+      "origin": "User-provided local reference collection; original publication URL not verified.",
+      "processing": "Resized/encoded WebP; original white background retained."
+    },
+    {
+      "id": "teatime",
+      "sourceName": "01_4.7启动器动态背景_静止帧_2560x1440.jpg",
+      "origin": "User-provided local reference collection; original publication URL not verified.",
+      "processing": "Resized/encoded WebP from the supplied still frame."
+    },
+    {
+      "id": "scarlet-trick",
+      "sourceName": "manga-red-white-original.png",
+      "origin": "User-provided image attachment on 2026-11-15; original publication URL and redistribution permission not verified.",
+      "sourceRecord": "scarlet-trick.source.json",
+      "processing": "Full original composition retained without mirroring or generative edits; lossless full-size WebP and a resized thumbnail. Red-black frame is rendered separately by CSS."
+    },
+    {
+      "id": "wind",
+      "sourceName": "bb8eddc3f8f8de0f24cc9d63aa245822.mp4",
+      "origin": "User-provided phone recording, 2026-11-16; original publication and redistribution permission not verified.",
+      "sourceRecord": "wind-aha-v2.source.json",
+      "processing": "Extracted a continuous character-only segment. Removed border-connected white while preserving enclosed white hair, and excluded disconnected platform badges and phone UI. Encoded a silent alpha VP9 WebM; retained the source recording unchanged."
+    },
+    {
+      "id": "welcome-wink",
+      "sourceName": "表情_02.png",
+      "origin": "User-provided local chibi collection; original publication URL and redistribution permission not verified.",
+      "processing": "AI-derived transparent-background edit using built-in image_gen, then resized and encoded WebP. Not a pixel-identical extraction. Original source is retained.",
+      "promptRecord": "welcome-prompts.json"
+    },
+    {
+      "id": "welcome-heart",
+      "sourceName": "表情_08.png",
+      "origin": "User-provided local chibi collection; original publication URL and redistribution permission not verified.",
+      "processing": "AI-derived transparent-background edit using built-in image_gen, then resized and encoded WebP. Not a pixel-identical extraction. Original source is retained.",
+      "promptRecord": "welcome-prompts.json"
+    },
+    {
+      "id": "welcome-shy",
+      "sourceName": "表情_05.png",
+      "origin": "User-provided local chibi collection; original publication URL and redistribution permission not verified.",
+      "processing": "AI-derived transparent-background edit using built-in image_gen, then resized and encoded WebP. Not a pixel-identical extraction. Original source is retained.",
+      "promptRecord": "welcome-prompts.json"
+    },
+    {
+      "id": "stage-frame-v3",
+      "sourceName": "gilded-stage.webp / gilt-corner.webp",
+      "origin": "User-approved frame completion derived from the local reference card using built-in image_gen.",
+      "processing": "Generated borderless perimeter scenery and a separate transparent nine-slice frame, encoded WebP. The renderer retains original central pixels in an independent protected layer. Original input artwork is unchanged.",
+      "promptRecord": "stage-edit-prompts.json"
+    },
+    {
+      "id": "stage-clear-backdrop",
+      "sourceName": "gilded-stage-motion-v1-poster.webp",
+      "origin": "Built-in image_gen derived empty theater scenery, matching the user-approved reference palette and curtains.",
+      "sourceRecord": "stage-clear-backdrop.source.json",
+      "processing": "Generated sharp red curtain scenery without figures or foreground props, encoded WebP. Original video and protected static illustration remain unchanged and render above this background."
+    },
+    {
+      "id": "motion-wallpapers-gilded-stage",
+      "sourceName": "gilded-stage-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "gilded-stage-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-wallpapers-teatime",
+      "sourceName": "teatime-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "teatime-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-wallpapers-scarlet-trick",
+      "sourceName": "scarlet-trick-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "scarlet-trick-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-welcome-wink",
+      "sourceName": "welcome-wink-motion-v1.webm",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "welcome-wink-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-welcome-heart",
+      "sourceName": "welcome-heart-motion-v1.webm",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "welcome-heart-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-welcome-shy",
+      "sourceName": "welcome-shy-motion-v1.webm",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "welcome-shy-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-portraits-smile",
+      "sourceName": "avatar-smile-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "avatar-smile-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-portraits-cheek-wink",
+      "sourceName": "avatar-cheek-wink-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "avatar-cheek-wink-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    },
+    {
+      "id": "motion-portraits-peace",
+      "sourceName": "avatar-peace-motion-v1.mp4",
+      "origin": "Author-generated motion derived from user-provided artwork; generation and processing recorded in the accompanying source record. Redistribution permission remains unconfirmed.",
+      "sourceRecord": "avatar-peace-motion-v1.source.json",
+      "processing": "Embedded unchanged from the packaged file; playback is muted at runtime."
+    }
+  ],
+  "assets": [
+    {
+      "file": "avatar-theater.png",
+      "bytes": 455036,
+      "sha256": "585bc6b760e1c8bd1fd0a81cfe146fe550022c5c0903d110f94ce45ea0bea9fb",
+      "source": "restored-static-theater"
+    },
+    {
+      "file": "avatar-theater.source.json",
+      "bytes": 474,
+      "sha256": "1ac93f5d2d5e2bde228b37da857906b54b671cad5a14cb0d41937a083b177908",
+      "source": "restored-static-theater"
+    },
+    {
+      "file": "avatar-smile.webp",
+      "bytes": 62508,
+      "sha256": "b18a4c385f3d1eb5b3a25ad56dc465ec1b6d0d857934a1aef9cc5257e4215c40",
+      "source": "user-selected-portraits-v2"
+    },
+    {
+      "file": "avatar-cheek-wink.webp",
+      "bytes": 36856,
+      "sha256": "5b872a745cc25773046d729f1e1dacdfbadaf74a29462593cbf8a06cd38a4b27",
+      "source": "user-selected-portraits-v2"
+    },
+    {
+      "file": "avatar-peace.webp",
+      "bytes": 49838,
+      "sha256": "ede8468de0d308162332f3ee0e9b20d06940f87b46247c3417ebb2a11e21123e",
+      "source": "user-selected-portraits-v2"
+    },
+    {
+      "file": "avatar-portraits.source.json",
+      "bytes": 2711,
+      "sha256": "3524d1f19db6b7d9e858a45c6160cfd5d3dc002bd95bdbe69bedcc6286adda67",
+      "source": "user-selected-portraits-v2"
+    },
+    {
+      "file": "aha-portrait-pv.webp",
+      "bytes": 195874,
+      "sha256": "677beef34ed65af7fac978c194d897f7ce1d25c1ac1d2c955a1c321079921890",
+      "source": "theater-portrait"
+    },
+    {
+      "file": "aha-portrait-pv.source.json",
+      "bytes": 635,
+      "sha256": "0da1f5accbb48b9ac1bdbc91e8a03cc78e6ac18a3e93ce3dc6bd5fa846525e0b",
+      "source": "theater-portrait"
+    },
+    {
+      "file": "gilded-stage.webp",
+      "bytes": 695862,
+      "sha256": "7def36337238fe1621ed8ed26283b94cad91b34fd472cb79de20b81ae5056a23",
+      "source": "reference-card"
+    },
+    {
+      "file": "gilded-stage-thumb.webp",
+      "bytes": 25510,
+      "sha256": "e806396c5cba32176fd6dedd91185226120b0d0c761c9ef55b0a7268071f570b",
+      "source": "reference-card"
+    },
+    {
+      "file": "wordmark.webp",
+      "bytes": 67254,
+      "sha256": "5b19ebab17e8de9475e2461790f064b340351c68282733c0cf307637415287b7",
+      "source": "reference-card"
+    },
+    {
+      "file": "gilt-corner.webp",
+      "bytes": 28138,
+      "sha256": "bf3462a0e604c48a55e163e314cfcb9fd1b480bc8b46ede778015e2744b48219",
+      "source": "reference-card"
+    },
+    {
+      "file": "portrait.webp",
+      "bytes": 169250,
+      "sha256": "2c9c5512da8b3695a6d6d2cf20aab521a53787ac895082cf7812791deab66c54",
+      "source": "portrait"
+    },
+    {
+      "file": "portrait-thumb.webp",
+      "bytes": 8374,
+      "sha256": "7c5bc039cfec0dd370b78f4ad20a226ef24cfcd54da6788993f5bc92f2445b72",
+      "source": "portrait"
+    },
+    {
+      "file": "teatime.webp",
+      "bytes": 436716,
+      "sha256": "8dc88f02a1798f4f7ebb20c26c00754824fa0ea72d10f7c7a9e75da8a7a65eb4",
+      "source": "teatime"
+    },
+    {
+      "file": "teatime-thumb.webp",
+      "bytes": 16274,
+      "sha256": "cbd29d8c6ab182bb79d63e9c8067d1beb6bdd106d67e720336ad1785a4474df8",
+      "source": "teatime"
+    },
+    {
+      "file": "scarlet-trick.webp",
+      "bytes": 845362,
+      "sha256": "e03ac80472977ee1a5b6b28ace80ec31d43a7b55a7ca3af6f83b70502982ec58",
+      "source": "scarlet-trick"
+    },
+    {
+      "file": "scarlet-trick-thumb.webp",
+      "bytes": 37440,
+      "sha256": "e57e8a693ed16e551767e2c5ffef3d415cd9c0248286010d760c433eaa63bf2c",
+      "source": "scarlet-trick"
+    },
+    {
+      "file": "scarlet-trick.source.json",
+      "bytes": 927,
+      "sha256": "bc6195b8b6700e8dae784e29c5cc94b73c8104ce946ca4b631edc65a8248fc8e",
+      "source": "scarlet-trick"
+    },
+    {
+      "file": "wind-aha-v2.webm",
+      "bytes": 430445,
+      "sha256": "bfe73989d8edf59462594cbf4edbf782aadc995618a74e4f2e08a05a52095671",
+      "source": "wind"
+    },
+    {
+      "file": "wind-aha-v2-poster.webp",
+      "bytes": 95828,
+      "sha256": "4fd4e786136ceabb2690a3f2c987fbc1a233a2379c543bd423987aa96abdede2",
+      "source": "wind"
+    },
+    {
+      "file": "wind-aha-v2.source.json",
+      "bytes": 2129,
+      "sha256": "48b155f208bcd12ea91cf267fbb40135ecb266deaae2a279466d2b01389c13ba",
+      "source": "wind"
+    },
+    {
+      "file": "welcome-wink.webp",
+      "bytes": 47602,
+      "sha256": "3ef1501e39af7d93a51bc5e3529acb2bed20ab8657c4f749479feaadc097369b",
+      "source": "welcome-wink"
+    },
+    {
+      "file": "welcome-heart.webp",
+      "bytes": 53536,
+      "sha256": "49098f216f8c5b88537a79797bb53425a1da06dbc1b8c3c97cbf31335031043c",
+      "source": "welcome-heart"
+    },
+    {
+      "file": "welcome-shy.webp",
+      "bytes": 52248,
+      "sha256": "485a76394748fd1e5e04570ba8498d96557fc0c4dd6629b3ec3c20d633e53f52",
+      "source": "welcome-shy"
+    },
+    {
+      "file": "gilded-stage-scene.webp",
+      "bytes": 415736,
+      "sha256": "1d236af29483ab4b3c504c5f929993d2bef7337dd7d1bdb64ac34837e56b17d8",
+      "source": "stage-frame-v3"
+    },
+    {
+      "file": "gilded-stage-scene-thumb.webp",
+      "bytes": 24412,
+      "sha256": "36ef1a6d132cd242653f64ab6fbdc2cc6e3585075f8d3361b4fe2ee737cc41f2",
+      "source": "stage-frame-v3"
+    },
+    {
+      "file": "stage-gold-frame.webp",
+      "bytes": 257716,
+      "sha256": "7f7993d53f7bf463e36de70724cca9fd1f5bdc306b4cfc602e409ffd86b9d3a7",
+      "source": "stage-frame-v3"
+    },
+    {
+      "file": "gilded-stage-clear-backdrop.webp",
+      "bytes": 170334,
+      "sha256": "04644a50e30eb4ac4dfd3c4ebae67c827f5a9ab8243722e32151613c419ee92c",
+      "source": "stage-clear-backdrop"
+    },
+    {
+      "file": "stage-clear-backdrop.source.json",
+      "bytes": 1974,
+      "sha256": "355eb23988ff3a5a67ecb72576299b7609131786538c41409c57d16f99bbf12a",
+      "source": "stage-clear-backdrop"
+    },
+    {
+      "file": "gilded-stage-motion-v1.mp4",
+      "bytes": 5788170,
+      "sha256": "f67f34f5733ae6de41ebbd97415775587eb327b9baab9541715457f2a7d04926",
+      "source": "motion-wallpapers-gilded-stage"
+    },
+    {
+      "file": "gilded-stage-motion-v1-poster.webp",
+      "bytes": 712958,
+      "sha256": "89e1496371706cd93afa90046f11abcb24affa4c27c11b7cf97e062353382b77",
+      "source": "motion-wallpapers-gilded-stage"
+    },
+    {
+      "file": "gilded-stage-motion-v1.source.json",
+      "bytes": 2866,
+      "sha256": "2aea1dfb9099fd44c08e1ba86dacd1eee6b4c4711e3c72602f9adce64a086077",
+      "source": "motion-wallpapers-gilded-stage"
+    },
+    {
+      "file": "teatime-motion-v1.mp4",
+      "bytes": 3647795,
+      "sha256": "275a15e354f3ba3f5a65ca75c821ef57bd53f425420e13a8c25d77ac76a9b286",
+      "source": "motion-wallpapers-teatime"
+    },
+    {
+      "file": "teatime-motion-v1-poster.webp",
+      "bytes": 392766,
+      "sha256": "26ea2b52a441864e54e2342eadaaa0762af286d068a1544b85ab7b7a0293f3c5",
+      "source": "motion-wallpapers-teatime"
+    },
+    {
+      "file": "teatime-motion-v1.source.json",
+      "bytes": 1657,
+      "sha256": "5fce4a11bb93f3571c8b0da91b13798a5143504c13fec5218f280f9f47345113",
+      "source": "motion-wallpapers-teatime"
+    },
+    {
+      "file": "scarlet-trick-motion-v1.mp4",
+      "bytes": 2918440,
+      "sha256": "45da2c14dc96b3bee39b3c741ea8132e8ce503c53f2272eadc2edb9e52a1485f",
+      "source": "motion-wallpapers-scarlet-trick"
+    },
+    {
+      "file": "scarlet-trick-motion-v1-poster.webp",
+      "bytes": 210014,
+      "sha256": "524570675926dd980af96caa4273290ce3f876a14253c237718e0483f01386e9",
+      "source": "motion-wallpapers-scarlet-trick"
+    },
+    {
+      "file": "scarlet-trick-motion-v1.source.json",
+      "bytes": 1685,
+      "sha256": "e3184b319d29bb60e904a4d5543dab0c53102cb316fb73cc6461ec24db57e038",
+      "source": "motion-wallpapers-scarlet-trick"
+    },
+    {
+      "file": "welcome-wink-motion-v1.webm",
+      "bytes": 1700802,
+      "sha256": "b3d01e74777a131ad107e9b2bdc8d35fd73c8a95f4fd8209f8181a1424f58a22",
+      "source": "motion-welcome-wink"
+    },
+    {
+      "file": "welcome-wink-motion-v1-poster.webp",
+      "bytes": 227012,
+      "sha256": "b18bee411ee4d7fdcccacc08d525ed487d105647d2afab35b9b9dd9ebdd7d688",
+      "source": "motion-welcome-wink"
+    },
+    {
+      "file": "welcome-wink-motion-v1.source.json",
+      "bytes": 3043,
+      "sha256": "ec3eb52b4752233613fe57dd99c131c376d2a3f214ca44a1dbf9a0525d4b8c00",
+      "source": "motion-welcome-wink"
+    },
+    {
+      "file": "welcome-heart-motion-v1.webm",
+      "bytes": 898378,
+      "sha256": "4340de58039fed11a906bd05b3af45ecfe7d872bb99029ad333d7726d1bef631",
+      "source": "motion-welcome-heart"
+    },
+    {
+      "file": "welcome-heart-motion-v1-poster.webp",
+      "bytes": 213280,
+      "sha256": "a8f82f74675a3961ed7c002ab34c2d6e013182ab6ac960cd27a4c0e97a5bd4a0",
+      "source": "motion-welcome-heart"
+    },
+    {
+      "file": "welcome-heart-motion-v1.source.json",
+      "bytes": 3758,
+      "sha256": "f1e602446cb67214d5264902965d6461c2e8e1404fb3121508c1432e585c694c",
+      "source": "motion-welcome-heart"
+    },
+    {
+      "file": "welcome-shy-motion-v1.webm",
+      "bytes": 828073,
+      "sha256": "fcf6c964e34a65498b3c94696d784709b033af15f60ed990e7d1d296542d1f0c",
+      "source": "motion-welcome-shy"
+    },
+    {
+      "file": "welcome-shy-motion-v1-poster.webp",
+      "bytes": 198514,
+      "sha256": "0f0d8d3b7901c523362c113b9c59b4a7eccadcacd15902f4c43dc4e3c3851e52",
+      "source": "motion-welcome-shy"
+    },
+    {
+      "file": "welcome-shy-motion-v1.source.json",
+      "bytes": 3757,
+      "sha256": "6dd71e8a7c0b8763ae7a430c426de8ade77035c8926a3fe7e0bc302028bbfa22",
+      "source": "motion-welcome-shy"
+    },
+    {
+      "file": "avatar-smile-motion-v1.mp4",
+      "bytes": 724566,
+      "sha256": "c673e801b9015667e8fb920d9c91caaed817fc0af37a06791c8c11279aaace10",
+      "source": "motion-portraits-smile"
+    },
+    {
+      "file": "avatar-smile-motion-v1-poster.webp",
+      "bytes": 60614,
+      "sha256": "f41eb3de3fe4953f463f1841992857df54f579af9fe875ea3946921e28183c33",
+      "source": "motion-portraits-smile"
+    },
+    {
+      "file": "avatar-smile-motion-v1.source.json",
+      "bytes": 1428,
+      "sha256": "ac44ef6b5cd81ab55604522766a941c1f63fb221dfedfa85a9cbaec582cce500",
+      "source": "motion-portraits-smile"
+    },
+    {
+      "file": "avatar-cheek-wink-motion-v1.mp4",
+      "bytes": 432352,
+      "sha256": "cb92a26c21f1b61420f268715c1667e446235c0cbe59381e969f125ff95eac5a",
+      "source": "motion-portraits-cheek-wink"
+    },
+    {
+      "file": "avatar-cheek-wink-motion-v1-poster.webp",
+      "bytes": 35630,
+      "sha256": "9698c8a674798d67a0f84b567e8265557c454bb30cc6784ca9b603d80589cdb2",
+      "source": "motion-portraits-cheek-wink"
+    },
+    {
+      "file": "avatar-cheek-wink-motion-v1.source.json",
+      "bytes": 1448,
+      "sha256": "eff19c43811bcb1d55aafb5e7f7f93016a6dc778b7df96a6c6f0a62fbe14b6d6",
+      "source": "motion-portraits-cheek-wink"
+    },
+    {
+      "file": "avatar-peace-motion-v1.mp4",
+      "bytes": 793012,
+      "sha256": "9d61351aefa7634fa04fba7f5a0cd9370e53e5b5151bf64cb72859f5f89ba9a6",
+      "source": "motion-portraits-peace"
+    },
+    {
+      "file": "avatar-peace-motion-v1-poster.webp",
+      "bytes": 50538,
+      "sha256": "e07bad9dc6260d88f41855b6fc784d47efc6aea9c389b40e0dba1d9d82327f7f",
+      "source": "motion-portraits-peace"
+    },
+    {
+      "file": "avatar-peace-motion-v1.source.json",
+      "bytes": 1428,
+      "sha256": "850472d847493bb10a8bab2dd6ad49bdbbb08765eceaa0cefe3fa53753078753",
+      "source": "motion-portraits-peace"
+    }
+  ]
+}
